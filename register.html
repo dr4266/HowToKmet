@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Stran ki je namenjena malim in velikim kmetovalcem za lajšanje vsakodnevnih opravil.">
+  <!--  Main Local stylesheet -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Register page stylesheest -->
+  <link rel="stylesheet" href="assets/css/register.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="favicon2.png"/>
+  <title>Registracija</title>
+</head>
+<body>
+  <div class="navbar">
+    <!-- Hidden untill the user clicks on menu -->
+    <div id="navbar-open">
+      <div class="links">
+        <a href="#">Prijava</a>
+        <p class="current-position" href="#">@Registracija</p>
+        <a href="#">Več o projektu</a>
+      </div>
+    </div>
+  	<a href="index.html">
+  		<img class="navbar-logo" src="assets/img/circle-tractor.png" alt="tractor">
+  		<p class="navbar-title">How To Kmet</p>
+  	</a>
+    <span id="menu-toggle" onclick="toggle_navigation()">
+    	<div id="nav-icon">
+    		<span></span>
+    		<span></span>
+    		<span></span>
+    		<span></span>
+    	</div>
+      <p class="menu-title">MENU</p>
+    </span>
+  </div>
+	<div class="container">
+    <div class="background">
+      <h2>Naslov</h2>
+      <div class="register-form-bg">
+        <form class="register-form" action="register()" method="post">
+          <p class="input-tag">Ime</p>
+          <input type="text" name="name" id="input-name" placeholder="David" required>
+          <p class="input-tag">Priimek</p>
+          <input type="text" name="surname" id="input-surname" placeholder="Rubin" required>
+          <p class="input-tag">Uporabniško ime</p>
+          <input type="text" name="username" id="input-username" placeholder="drubin" required>
+          <p class="input-tag">Geslo</p>
+          <input type="password" name="password" id="input-password" required>
+          <p class="input-tag">Email (opcijsko)</p>
+          <input type="text" name="email" id="input-email">
+          <button type="checkbox" name="anonymous-statistics" id="input-statistics"></button>
+            Dovoljujem, da se moji podatki uporabijo v anonimnih izračunih
+            za statistiko.
+          <button type="submit" name="submit-button" class="btn btn-xs btn-info">Registriraj</button>
+        </form>
+      </div>
+      <div class="kek">
+        <img src="assets/img/circle-tractor.png" alt="Šala" />
+        <p class="kek-joke">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        </p>
+      </div>
+  </div>
+  </div>
+  <!-- The local script -->
+  <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>

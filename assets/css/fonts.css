@@ -1,0 +1,34 @@
+
+/* Permanent Marker font */
+@font-face {
+	font-family: PermanentMarker;
+	src: url(../fonts/PermanentMarker.ttf);
+}
+
+/* OpenSans Regular */
+@font-face {
+	font-family: OpenSans;
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+/* Flicker font */
+@font-face {
+	font-family: Flicker;
+	src: url(../fonts/Flicker-Demo.otf);
+}
+
+/* Questrial */
+@font-face {
+	font-family: Questrial;
+	src: url(../fonts/Questrial-Regular.ttf);
+}
+
+@font-face {
+	font-family: Gloria;
+	src: url(../fonts/Gloria-Hallelujah-Regular.ttf);
+}
+
+@font-face {
+	font-family: Generous;
+	src: url(../fonts/Generous-Demo-Regular.otf);
+}
