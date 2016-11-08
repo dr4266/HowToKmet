@@ -1,4 +1,4 @@
-# HowToKmet
+# [HowToKmet](https://dr4266.github.io/HowToKmet "Predogled strani na github pages")
 Kak je že ime moji kravi? Čaki, keda sem že kosil travo? Čuj, keda bi blo dobro ječmen usjat? To in še več na How To Kmet.
 
 ### Ka pa je to??
