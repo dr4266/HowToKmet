@@ -39,36 +39,54 @@
   </div>
 	<div class="container">
     <div class="background">
-      <h2>Naslov</h2>
+      <h2>Pridružite se</h2>
+      <div class="kek">
+        <img src="assets/img/kmetic.png" alt="Šala" />
+        <span class="kek-cloud">
+          <pre id="kek-joke"></pre>
+        </span>
+      </div>
       <div class="register-form-bg">
-        <form class="register-form" action="register()" method="post">
-          <p class="input-tag">Ime</p>
-          <input type="text" name="name" id="input-name" placeholder="David" required>
-          <p class="input-tag">Priimek</p>
-          <input type="text" name="surname" id="input-surname" placeholder="Rubin" required>
-          <p class="input-tag">Uporabniško ime</p>
-          <input type="text" name="username" id="input-username" placeholder="drubin" required>
-          <p class="input-tag">Geslo</p>
-          <input type="password" name="password" id="input-password" required>
-          <p class="input-tag">Email (opcijsko)</p>
-          <input type="text" name="email" id="input-email">
-          <button type="checkbox" name="anonymous-statistics" id="input-statistics"></button>
-            Dovoljujem, da se moji podatki uporabijo v anonimnih izračunih
-            za statistiko.
-          <button type="submit" name="submit-button" class="btn btn-xs btn-info">Registriraj</button>
+        <form class="register-form" action="javascript:register()">
+          <h1>Podatki za registracijo</h1>
+          <label for="input-name">Ime</label>
+          <input type="text" name="name" id="input-name" placeholder="David" required="required"> <br>
+
+          <label for="input-surname">Priimek</label>
+          <input type="text" name="surname" id="input-surname" placeholder="Rubin" required="required"> <br>
+
+          <label for="input-username">Uporabniško ime</label>
+          <input type="text" name="username" id="input-username" placeholder="drubin" required="required"> <br>
+
+          <label for="input-password">Geslo</label>
+          <input type="password" name="password" id="input-password" placeholder="mocno.geslo" required="required" <br>
+
+          <label for="input-password-check">Ponovite geslo</label>
+          <input type="password" name="password" id="input-password-check" placeholder="mocno.geslo" required="required"> <br>
+
+          <label for="input-email">Email (opcijsko)</label>
+          <input type="text" name="email" id="input-email" placeholder="david@howtokmet.si"> <br>
+
+          <input type="checkbox" name="anonymous-statistics" class="custom-checkbox" id="input-statistics">
+          <label for="input-statistics" class="custom-checkbox-label"></label>
+          <span class="custom-checkbox-text">
+            Dovoljujem, da se moji podatki uporabijo v
+            anonimnih izračunih za statistiko
+          </span>
+          <input type="submit" name="submit-button" class="btn btn-primary-outline" value="Registriraj me"></input>
         </form>
       </div>
-      <div class="kek">
-        <img src="assets/img/circle-tractor.png" alt="Šala" />
-        <p class="kek-joke">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-        </p>
-      </div>
   </div>
   </div>
-  <!-- The local script -->
+  <!-- Registration info modal -->
+  <div id="registration-modal">
+    <div id="registration-message">
+    </div>
+  </div>
+
+  <!-- The main script -->
   <script type="text/javascript" src="assets/js/script.js"></script>
+  <!-- Register page only script -->
+  <script type="text/javascript" src="assets/js/register-script.js"></script>
 </body>
 </html>

@@ -16,8 +16,3 @@ function toggle_navigation() {
 	else
 		nav_div.style.width = '100%';
 }
-
-// Handle the registration
-function register() {
-	console.log("Succesful");
-}
