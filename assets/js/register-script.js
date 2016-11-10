@@ -9,16 +9,33 @@ var json_data = {
 };
 
 document.addEventListener('DOMContentLoaded', function(event){
+
   // Display a random joke from the json
   var kek_of_the_day = document.getElementById('kek-joke');
   var rndm = Math.floor(Math.random() * 4);
   kek_of_the_day.textContent = json_data.jokes[rndm].kek;
-  console.log(kek_of_the_day.innerHtml)
+
+  //Change the validity text for elements (email gets a different one than others)
+  var elements = document.getElementsByTagName('input');
+  for (var i=0; i < elements.length; i++) {
+    elements[i].oninvalid = function(e) {
+      e.target.setCustomValidity("");
+      if (e.target.type == 'email')
+        e.target.setCustomValidity("Pravi mail z @ in domena prosim.");
+      else {
+        if (!e.target.validity.valid) {
+          e.target.setCustomValidity("Tu se mores nika napisat.");
+        }
+      }
+    };
+    elements[i].oninput = function(e) {
+      e.target.setCustomValidity("");
+    }
+  }
 });
 
 // Handle the registration
 function register() {
-	console.log("Succesful");
 	var name = document.getElementById('input-name').value;
 	var surname = document.getElementById('input-surname').value;
 	var username = document.getElementById('input-username').value;
@@ -27,12 +44,13 @@ function register() {
 	var password_check = document.getElementById('input-password-check').value;
 	var statistics = document.getElementById('input-statistics').checked;
 
-  var modal = document.getElementById('registration-modal');
-  var content = document.getElementById('registration-message');
-  content.innerHTML =  '<p>Successfully registered ' + name + ' ' + surname +  '</p>' + '<p style="font-size: 10pt;">(click anywhere to close)</p>';
-  modal.style.display = "block";
+  var modal = document.getElementById('modal');
+  var content = document.getElementById('modal-content');
+  content.innerHTML =  '<p>Successfully registered ' + name + ' ' + surname +  '</p>'
+                          + '<p style="font-size: 10pt;">(kliknite da zaprete okno)</p>';
+  modal.style.display = 'block';
 
   modal.onclick = function() {
-    modal.style.display = "none";
+    modal.style.display = 'none';
   }
 }

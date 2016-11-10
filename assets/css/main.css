@@ -75,6 +75,14 @@ a:hover {
 	color: white;
 }
 
+.current-position {
+  font-size: 40px;
+	bottom: .5%;
+	display: block;
+  color: white;
+	font-family: Gloria;
+}
+
 .outline-link {
 	border-radius: 60px;
 	border: 4px solid black;
@@ -105,27 +113,32 @@ a:hover {
 	padding: 2px 10px;
 }
 
+.btn-wide {
+	width: 70%;
+}
+
 .btn-primary {
 	color: #fff;
-	background-color: #3181c6;
+	background-color: #337ab7;
 	border-color: #2e6da4;
 
 }
 
+.btn-primary:hover {
+	background-color: #286090;
+	border-color: #204d74;
+}
+
 .btn-primary-outline {
-	color: #3181c6;
+	color: #337ab7;
 	background-color: transparent;
-	border-color: #3181c6;
+	border-color: #337ab7;
 }
 
 .btn-primary-outline:hover {
 	color: #fff;
-	background-color: #3181c6;
+	background-color: #337ab7;
 	border-color: #2e6da4;
-}
-
-.navbar {
-	padding-bottom: 50px;
 }
 
 .navbar-title {
@@ -178,6 +191,33 @@ a:hover {
 	padding: 15px;
 }
 
+#modal {
+  display: none;
+  color: #666;
+  text-align: center;
+  font-size: 30px;
+  top: 300px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+
+#modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
 /* Don't display text if the screen gets too small */
 @media screen and (max-width: 600px) {
 	.navbar-title {
@@ -203,8 +243,12 @@ a:hover {
 /* Don't display the 'MENU' text if the screen gets too small */
 @media screen and (max-width: 450px) {
 	.menu-title {
-		display: none; !important;
+		display: none !important;
 	}
+}
+
+#menu-toggle {
+	display: inline;
 }
 
 #menu-toggle:hover > div > span{

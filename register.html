@@ -18,9 +18,9 @@
     <!-- Hidden untill the user clicks on menu -->
     <div id="navbar-open">
       <div class="links">
-        <a href="#">Prijava</a>
+        <a href="login.html">Prijava</a>
         <p class="current-position" href="#">@Registracija</p>
-        <a href="#">Več o projektu</a>
+        <a href="about.html">Več o projektu</a>
       </div>
     </div>
   	<a href="index.html">
@@ -50,24 +50,24 @@
         <form class="register-form" action="javascript:register()">
           <h1>Podatki za registracijo</h1>
           <label for="input-name">Ime</label>
-          <input type="text" name="name" id="input-name" placeholder="David" required="required"> <br>
+          <input type="text" name="name" id="input-name" placeholder="David" required="required" title="Izpolnite to polje" />
 
           <label for="input-surname">Priimek</label>
-          <input type="text" name="surname" id="input-surname" placeholder="Rubin" required="required"> <br>
+          <input type="text" name="surname" id="input-surname" placeholder="Rubin" required="required" title="Izpolnite to polje" />
 
           <label for="input-username">Uporabniško ime</label>
-          <input type="text" name="username" id="input-username" placeholder="drubin" required="required"> <br>
+          <input type="text" name="username" id="input-username" placeholder="drubin" required="required" title="Izpolnite to polje" />
 
           <label for="input-password">Geslo</label>
-          <input type="password" name="password" id="input-password" placeholder="mocno.geslo" required="required" <br>
+          <input type="password" name="password" id="input-password" placeholder="mocno.geslo" required="required" title="Izpolnite to polje" />
 
           <label for="input-password-check">Ponovite geslo</label>
-          <input type="password" name="password" id="input-password-check" placeholder="mocno.geslo" required="required"> <br>
+          <input type="password" name="password" id="input-password-check" placeholder="mocno.geslo" required="required" title="Izpolnite to polje" />
 
           <label for="input-email">Email (opcijsko)</label>
-          <input type="text" name="email" id="input-email" placeholder="david@howtokmet.si"> <br>
+          <input type="email" name="email" id="input-email" placeholder="david@howtokmet.si" title="Priporočamo vnos za lažji kontakt" />
 
-          <input type="checkbox" name="anonymous-statistics" class="custom-checkbox" id="input-statistics">
+          <input type="checkbox" name="anonymous-statistics" class="custom-checkbox" id="input-statistics" />
           <label for="input-statistics" class="custom-checkbox-label"></label>
           <span class="custom-checkbox-text">
             Dovoljujem, da se moji podatki uporabijo v
@@ -79,11 +79,10 @@
   </div>
   </div>
   <!-- Registration info modal -->
-  <div id="registration-modal">
-    <div id="registration-message">
+  <div id="modal">
+    <div id="modal-content">
     </div>
   </div>
-
   <!-- The main script -->
   <script type="text/javascript" src="assets/js/script.js"></script>
   <!-- Register page only script -->

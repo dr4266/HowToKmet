@@ -12,29 +12,32 @@
 	<title>HowToKmet</title>
 </head>
 <body>
-  <div class="navbar">
-    <!-- Hidden untill the user clicks on menu -->
-    <div id="navbar-open">
-      <div class="links">
-        <a href="#">Prijava</a>
-        <a href="register.html">Registracija</a>
-        <a href="#">Več o projektu</a>
+  <nav>
+    <div class="navbar">
+      <!-- Hidden untill the user clicks on menu -->
+      <div id="navbar-open">
+        <div class="links">
+          <!-- TODO Add ul tags for the links?? -->
+          <a href="login.html">Prijava</a>
+          <a href="register.html">Registracija</a>
+          <a href="about.html">Več o projektu</a>
+        </div>
+      </div>
+    	<a href="index.html">
+    		<img class="navbar-logo" src="assets/img/circle-tractor.png" alt="tractor">
+    		<p class="navbar-title">How To Kmet</p>
+    	</a>
+      <div id="menu-toggle" onclick="toggle_navigation()">
+      	<div id="nav-icon">
+      		<span></span>
+      		<span></span>
+      		<span></span>
+      		<span></span>
+      	</div>
+        <p class="menu-title">MENU</p>
       </div>
     </div>
-  	<a href="index.html">
-  		<img class="navbar-logo" src="assets/img/circle-tractor.png" alt="tractor">
-  		<p class="navbar-title">How To Kmet</p>
-  	</a>
-    <span id="menu-toggle" onclick="toggle_navigation()">
-    	<div id="nav-icon">
-    		<span></span>
-    		<span></span>
-    		<span></span>
-    		<span></span>
-    	</div>
-      <p class="menu-title">MENU</p>
-    </span>
-  </div>
+  </nav>
 	<div class="container">
 		<!-- The first section the user can see when the page loads -->
     	<section id="first">
@@ -50,7 +53,7 @@
       </a>
 		</section>
 		<section id="last">
-      <img src="assets/img/footer.png" />
+      <img src="assets/img/footer.png" alt="Vector farm" />
       <a href="http://www.freepik.com/free-photos-vectors/computer" target="_blank">Computer vector designed by Freepik</a>
 		</section>
   </div>
