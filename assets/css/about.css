@@ -1,0 +1,35 @@
+body {
+  font-family: OpenSans;
+}
+
+h1,
+h2 {
+  font-family: Flicker;
+  color: #fff;/*#761520;*/
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 30pt;
+}
+
+h2 {
+  font-size: 20pt;
+  color: #31708f;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.panel {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div[role="first"] {
+  margin-bottom: 80px;
+}
