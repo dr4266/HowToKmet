@@ -23,12 +23,26 @@
 	src: url(../fonts/Questrial-Regular.ttf);
 }
 
+/* Gloria font*/
 @font-face {
 	font-family: Gloria;
 	src: url(../fonts/Gloria-Hallelujah-Regular.ttf);
 }
 
+/*Generous font*/
 @font-face {
 	font-family: Generous;
 	src: url(../fonts/Generous-Demo-Regular.otf);
+}
+
+/* Oswald Google font */
+@font-face {
+	font-family: Oswald;
+	src: url(../fonts/Oswald-Regular.ttf);
+}
+
+/* Anton Google font */
+@font-face {
+	font-family: Anton;
+	src: url(../fonts/Anton.ttf);
 }

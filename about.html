@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,33 +12,37 @@
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/png" href="favicon2.png"/>
   <title>O projektu</title>
+  <noscript>Your browser does not support JavaScript!</noscript>
 </head>
 <body>
-  <div class="navbar">
-    <!-- Hidden untill the user clicks on menu -->
-    <div id="navbar-open">
-      <div class="links">
-        <a href="login.html">Prijava</p>
-        <a href="register.html">Registracija</a>
-        <p class="current-position">@Več o projektu</p>
+  <nav>
+    <div class="navbar">
+      <!-- Hidden untill the user clicks on menu -->
+      <div id="navbar-open">
+        <div class="links">
+          <a href="index.html">Domov</a>
+          <a href="login.html">Prijava</a>
+          <a href="register.html">Registracija</a>
+          <p class="current-position">@Več o projektu</p>
+        </div>
+      </div>
+    	<a href="index.html">
+    		<img class="navbar-logo" src="assets/img/circle-tractor.png" alt="tractor">
+    		<p class="navbar-title">How To Kmet</p>
+    	</a>
+      <div id="menu-toggle" onclick="toggle_navigation()">
+      	<div id="nav-icon">
+      		<span></span>
+      		<span></span>
+      		<span></span>
+      		<span></span>
+      	</div>
+        <p class="menu-title">MENU</p>
       </div>
     </div>
-  	<a href="index.html">
-  		<img class="navbar-logo" src="assets/img/circle-tractor.png" alt="tractor">
-  		<p class="navbar-title">How To Kmet</p>
-  	</a>
-    <span id="menu-toggle" onclick="toggle_navigation()">
-    	<div id="nav-icon">
-    		<span></span>
-    		<span></span>
-    		<span></span>
-    		<span></span>
-    	</div>
-      <p class="menu-title">MENU</p>
-    </span>
-  </div>
+  </nav>
 	<div class="container">
-    <div class="panel panel-primary" role="first">
+    <div class="panel panel-primary">
       <header class="panel-heading">
         <h1>Kak bit kmet</h1>
       </header>
@@ -51,7 +55,7 @@
         </p>
       </div>
     </div>
-    <div class="panel panel-info" role="introduction">
+    <div class="panel panel-info">
       <header class="panel-heading">
         <h2>Ka pa je to?</h2>
       </header>
@@ -65,7 +69,7 @@
         </p>
       </div>
     </div>
-    <div class="panel panel-info" role="purpose">
+    <div class="panel panel-info">
       <header class="panel-heading">
         <h2>Ja, ka bom pa s tem delo?</h2>
       </header>
@@ -76,6 +80,14 @@
       </div>
     </div>
   </div>
+  <!-- Alerts the user to use javascript on this page -->
+  <noscript>
+    <div class="enable-js">
+      <p>
+        Please enable javascript to view this page.
+      </p>
+    </div>
+  </noscript>
   <!-- The main script -->
   <script type="text/javascript" src="assets/js/script.js"></script>
 </body>

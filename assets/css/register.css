@@ -37,7 +37,7 @@ div.background  {
   width: 300px;
 }
 
-span.kek-cloud {
+.kek-cloud {
   padding: 3px 5px 3px 15px;
   margin-left: 30px;
   background-color: #fff;
@@ -53,7 +53,7 @@ span.kek-cloud {
   vertical-align: top;
 }
 
-span.kek-cloud:before {
+.kek-cloud:before {
   content: ' ';
   position: absolute;
   width: 0;
@@ -64,7 +64,7 @@ span.kek-cloud:before {
   border-color: transparent #666 #666 transparent;
 }
 
-span.kek-cloud:after {
+.kek-cloud:after {
   content: ' ';
   position: absolute;
   width: 0;

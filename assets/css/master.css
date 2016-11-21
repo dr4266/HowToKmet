@@ -1,0 +1,100 @@
+@import "fonts.css";
+
+.wrapper {
+  display: grid;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  grid-template-columns: 230px repeat(2, 1fr);
+  grid-template-rows: repeat(3, 60px) repeat(3, 70px) auto 80px;
+  grid-gap: 0;
+  grid-template-areas: "nav header header"
+                       "nav main   main"
+                       "nav main   main"
+                       "nav main   main"
+                       "nav main   main"
+                       "nav main   main"
+                       "nav main   main"
+                       "nav footer footer";
+}
+
+nav {
+  grid-area: nav;
+  background: #354052;
+  font-family: Oswald;
+}
+
+.nav-block {
+  margin-bottom: 30px;
+  padding-left: 15px;
+  color: #A0ACBF;
+}
+
+.nav-block ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.nav-block a {
+  text-decoration: none;
+  font-family: OpenSans;
+  font-weight: bold;
+  color: rgb(161, 172, 191);
+  font-size: 12pt;
+}
+
+.nav-block a:hover {
+  color: rgba(108, 116, 131, 1);
+}
+
+.account-info {
+  padding-top: 20px;
+  padding-left: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 12pt;
+}
+
+.account-info > img {
+  width: 80px;
+  display: block;
+  margin: 10px auto 10px auto;
+}
+
+.menu-subtitle {
+  color: #627089;
+  font-size: 11pt;
+  font-weight: bold;
+}
+
+hr {
+  border: 1px solid #3D495D;
+  border-left: 0;
+  border-right: 0;
+  height: 2px;
+  background-color: #293241;
+}
+
+.searchbar {
+  grid-area: header;
+  border: 1px solid #ccc;
+}
+
+.searchbar input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 4px;
+  font-size: 18pt;
+  background-color: #fff;
+  padding: 12px 20px 12px 40px;
+  background-image: url(../img/search-icon.png);
+  background-size: 21px 21px;
+  background-position: 10px 15px;
+  background-repeat: no-repeat;
+}
+
+.content {
+  grid-area: main;
+}

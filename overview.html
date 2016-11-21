@@ -1,46 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Stran ki je namenjena malim in velikim kmetovalcem za lajšanje vsakodnevnih opravil.">
-  <!--  Main Local stylesheet -->
-  <link rel="stylesheet" href="assets/css/main.css">
-  <!-- login page stylesheest -->
-  <link rel="stylesheet" href="assets/css/login.css">
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/png" href="favicon2.png"/>
+  <!-- Separate css for dashboard -->
+  <link rel="stylesheet" href="assets/css/master.css" media="screen" />
   <title>Pregled</title>
 </head>
 <body>
-  <div class="navbar">
-    <!-- Hidden untill the user clicks on menu -->
-    <div id="navbar-open">
-      <div class="links">
-        <p class="current-position">@Pregled</p>
-          <p class="current-position">Odjava?</p>
-        <a href="about.html">Več o projektu</a>
+  <div class="wrapper">
+    <!-- Navigational area on the left -->
+    <nav>
+      <!-- Account image and name -->
+      <div class="nav-block account-info">
+        <img src="assets/img/default-person-white.png" alt="Default account image" />
+        Blaž Vrhovšek
       </div>
+      <hr />
+      <!-- Main nav section -->
+      <div class="nav-block nav-main">
+        <p class="menu-subtitle">
+          Glavno
+        </p>
+        <ul>
+          <li>
+            <a href="overview.html">Pozdravljen</a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <!-- Nav section for tasks -->
+      <div class="nav-block nav-tasks">
+        <p class="menu-subtitle">
+          Opravila
+        </p>
+        <ul>
+          <li>
+            <a href="#">Dodaj opravilo</a>
+          </li>
+          <li>
+            <a href="#">Pregled opravil</a>
+          </li>
+          <li>
+            <a href="#">Posodobi opravilo</a>
+          </li>
+        </ul>
+      </div>
+      <hr  />
+      <!-- Nav section for animals -->
+      <div class="nav-block nav-animals">
+        <p class="menu-subtitle">
+          Živali
+        </p>
+        <ul>
+          <li>
+            <a href="#">Dodaj žival</a>
+          </li>
+          <li>
+            <a href="#">Pregled živali</a>
+          </li>
+          <li>
+            <a href="#">Posodobi žival</a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <!-- Nav section for properties -->
+      <div class="nav-block nav-property">
+        <p class="menu-subtitle">
+          Posest
+        </p>
+        <ul>
+          <li>
+            <a href="#">Dodaj posest</a>
+          </li>
+          <li>
+            <a href="#">Pregled posesti</a>
+          </li>
+          <li>
+            <a href="#">Posodobi posest</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="searchbar">
+      <input type="text" name="search" placeholder="Iskanje..">
     </div>
-  	<a href="index.html">
-  		<img class="navbar-logo" src="assets/img/circle-tractor.png" alt="tractor">
-  		<p class="navbar-title">How To Kmet</p>
-  	</a>
-    <span id="menu-toggle" onclick="toggle_navigation()">
-    	<div id="nav-icon">
-    		<span></span>
-    		<span></span>
-    		<span></span>
-    		<span></span>
-    	</div>
-      <p class="menu-title">MENU</p>
-    </span>
+    <div class="content">
+      Content
+    </div>
   </div>
-	<section style="text-align: center; font-family: OpenSans; font-size: 40pt">
-	  Zgleda da tukaj ni ničesar ...
-	</section>
-  <!-- The main script -->
-  <script type="text/javascript" src="assets/js/script.js"></script>
+  <!-- Alerts the user to use javascript on this page -->
+  <noscript>
+    <div class="enable-js">
+      <p>
+        Please enable javascript to view this page.
+      </p>
+    </div>
+  </noscript>
 </body>
 </html>

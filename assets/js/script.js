@@ -11,8 +11,12 @@ document.addEventListener('DOMContentLoaded', function(event){
 // Open/close the navigational menu
 function toggle_navigation() {
 	var nav_div = document.getElementById('navbar-open');
-	if (nav_div.style.width == '100%')
+	var body_tags = document.getElementsByTagName('body');
+	if (nav_div.style.width == '100%') {
 		nav_div.style.width = '0%';
-	else
+		body_tags[0].style.overflow = 'auto';
+	} else {
 		nav_div.style.width = '100%';
+		body_tags[0].style.overflow = 'hidden';
+	}
 }

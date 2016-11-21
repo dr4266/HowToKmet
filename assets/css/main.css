@@ -1,11 +1,26 @@
 @import "fonts.css";
 
+nav {
+}
+
 body {
 	margin: 0px;
 	padding: 0px;
 	background: url(../img/summer-grass.jpg) no-repeat top center;
 	background-size: cover;
 	background-attachment: fixed;
+}
+
+footer {
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 447px;
+	max-width: 80%;
+	background-image: url(../img/footer.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: contain;
 }
 
 h2 {
@@ -78,14 +93,14 @@ h2 {
 }
 
 #last {
-	padding-top: 60px;
+	height: 100%;
 	position: relative;
-	margin: 0;
+	margin: auto;
 }
 
 #last > a {
 	position: absolute;
-	font-size: 80%;
+	font-size: 12pt;
 	bottom: .5%;
 	display: block;
 	right: 15%;
@@ -97,12 +112,6 @@ h2 {
 	color: orange;
 }
 
-#last > img {
-	display: block;
-	max-width: 100%;
-	margin: auto;
-	position: relative;
-}
 
 a {
 	color: black;
@@ -210,7 +219,7 @@ a:hover {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: rgba(118, 21, 32, 0.95);;
+	background-color: rgba(118, 21, 32, 0.95);
 	overflow-x: hidden;
 	transition: .5s ease-in-out;
 	-webkit-transition: .5s ease-in-out;
@@ -375,4 +384,17 @@ a:hover {
 	top: 18px;
 	width: 0%;
 	left: 50%;
+}
+
+.enable-js {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(118, 21, 32, 0.96);
+	color: #fff;
+	z-index: 8001;
+	text-align: center;
+	font-size: 40px;
 }

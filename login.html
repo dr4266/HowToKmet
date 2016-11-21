@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,35 +14,38 @@
   <title>Prijava</title>
 </head>
 <body>
-  <div class="navbar">
-    <!-- Hidden untill the user clicks on menu -->
-    <div id="navbar-open">
-      <div class="links">
-        <p class="current-position">@Prijava</p>
-        <a href="register.html">Registracija</a>
-        <a href="about.html">Več o projektu</a>
+  <nav>
+    <div class="navbar">
+      <!-- Hidden untill the user clicks on menu -->
+      <div id="navbar-open">
+        <div class="links">
+          <a href="index.html">Domov</a>
+          <p class="current-position">@Prijava</p>
+          <a href="register.html">Registracija</a>
+          <a href="about.html">Več o projektu</a>
+        </div>
+      </div>
+    	<a href="index.html">
+    		<img class="navbar-logo" src="assets/img/circle-tractor.png" alt="tractor">
+    		<p class="navbar-title">How To Kmet</p>
+    	</a>
+      <div id="menu-toggle" onclick="toggle_navigation()">
+      	<div id="nav-icon">
+      		<span></span>
+      		<span></span>
+      		<span></span>
+      		<span></span>
+      	</div>
+        <p class="menu-title">MENU</p>
       </div>
     </div>
-  	<a href="index.html">
-  		<img class="navbar-logo" src="assets/img/circle-tractor.png" alt="tractor">
-  		<p class="navbar-title">How To Kmet</p>
-  	</a>
-    <span id="menu-toggle" onclick="toggle_navigation()">
-    	<div id="nav-icon">
-    		<span></span>
-    		<span></span>
-    		<span></span>
-    		<span></span>
-    	</div>
-      <p class="menu-title">MENU</p>
-    </span>
-  </div>
+  </nav>
 	<div class="container">
     <div class="login-background">
       <div class="login-input">
         <h2>Potrebna je prijava</h2>
-        <form type="post" action="javascript:login()">
-          <label for="input-name">Uporabniško ime</label>
+        <form action="javascript:login()">
+          <label for="input-username">Uporabniško ime</label>
           <input type="text" name="username" id="input-username" placeholder="Vaše uporabniško ime" required="required" title="Izpolnite to polje"/>
           <label for="input-password">Geslo</label>
           <input type="password" name="password" id="input-password" placeholder="Vaše geslo" required="required" title="Izpolnite to polje"/>
@@ -57,6 +60,14 @@
     <div id="modal-content">
     </div>
   </div>
+  <!-- Alerts the user to use javascript on this page -->
+  <noscript>
+    <div class="enable-js">
+      <p>
+        Please enable javascript to view this page.
+      </p>
+    </div>
+  </noscript>
   <!-- The main script -->
   <script type="text/javascript" src="assets/js/script.js"></script>
   <!-- Login page script -->
