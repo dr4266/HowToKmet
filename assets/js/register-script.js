@@ -46,8 +46,13 @@ function register() {
 
   var modal = document.getElementById('modal');
   var content = document.getElementById('modal-content');
+  if (password == password_check) {
   content.innerHTML =  '<p>Successfully registered ' + name + ' ' + surname +  '</p>'
                           + '<p style="font-size: 10pt;">(kliknite da zaprete okno)</p>';
+  } else {
+    content.innerHTML =  '<p>Gesli se ne ujemata.</p>'
+                            + '<p style="font-size: 10pt;">(kliknite da zaprete okno)</p>';
+  }
   modal.style.display = 'block';
 
   modal.onclick = function() {
