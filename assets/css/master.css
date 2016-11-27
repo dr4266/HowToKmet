@@ -1,38 +1,165 @@
 @import "fonts.css";
 
+body{
+  background-color: #4E667D;
+  background: linear-gradient(to right, #315F76, #5B717E);
+  background: -o-linear-gradient(to right, #315F76, #5B717E);
+  background: -moz-linear-gradient(to right, #315F76, #5B717E);
+}
+
+p {
+  display: inline;
+  padding: 10px;
+}
+
+a {
+  color: #7989a0;
+}
+
+a:hover {
+  color: #485261;
+}
+
+h1 {
+  font-family: Flicker;
+  margin-left: 150px;
+  font-size: 30pt;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.header-main {
+  font-family: OpenSans;
+  font-size: 40pt;
+  padding: 10px 20px;
+}
+
+.form-bg {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #EBF1F5;
+}
+
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+
+.label-default {
+  background-color: #777;
+}
+
+.input-sm {
+  display: block;
+  margin: 10px 0 20px 0;
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  width: 98%;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.input-sm:focus {
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+  border-color: #66afe9;
+}
+
 .wrapper {
-  display: grid;
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  grid-template-columns: 230px repeat(2, 1fr);
-  grid-template-rows: repeat(3, 60px) repeat(3, 70px) auto 80px;
-  grid-gap: 0;
-  grid-template-areas: "nav header header"
-                       "nav main   main"
-                       "nav main   main"
-                       "nav main   main"
-                       "nav main   main"
-                       "nav main   main"
-                       "nav main   main"
-                       "nav footer footer";
+  position: relative;
+  top: 3px;
+}
+
+.dropdown-account {
+  position: relative;
+  cursor: default;
+}
+
+.username-options {
+  background-color: rgba(22, 26, 32, 0.85);
+  left: calc(5% + 10px);
+  visibility: hidden;
+  opacity: 0;
+  width: 80%;
+  position: absolute;
+  margin-top: 5px;
+  padding: 7px 0 7px 0;
+  box-sizing: content-box;
+  transform: translateY(-2em);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.username-options > li {
+  padding: 5px 0 5px 0 !important;
+}
+
+.dropdown-account:hover .username-options {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s
+}
+
+.dropdown-account:hover #username {
+  box-sizing: border-box;
+  padding: 5px 18% 3px 18%;
+  background-color: rgba(22, 26, 32, 0.85);
+  border-bottom: 1px solid #15A4FA;
 }
 
 nav {
-  grid-area: nav;
+  position: absolute;
+  left: 5%;
+  width: 200px;
+  min-height: 860px;
+  height: calc(100vh - 20px);
   background: #354052;
   font-family: Oswald;
 }
 
 .nav-block {
   margin-bottom: 30px;
-  padding-left: 15px;
   color: #A0ACBF;
+  cursor: default;
 }
 
 .nav-block ul {
   list-style-type: none;
-  padding-left: 10px;
+  padding: 0;
+}
+
+.nav-block li {
+  padding: 5px 10px 5px 30px;
+}
+
+.current-page {
+  border-left: 4px solid #15A4FA;
+  background-color: #2F3948;
+}
+
+.current-page > a {
+  color: #fff !important;
 }
 
 .nav-block a {
@@ -41,6 +168,7 @@ nav {
   font-weight: bold;
   color: rgb(161, 172, 191);
   font-size: 12pt;
+  cursor: pointer;
 }
 
 .nav-block a:hover {
@@ -66,6 +194,7 @@ nav {
   color: #627089;
   font-size: 11pt;
   font-weight: bold;
+  padding-left: 15px;
 }
 
 hr {
@@ -77,15 +206,16 @@ hr {
 }
 
 .searchbar {
-  grid-area: header;
-  border: 1px solid #ccc;
+  width: calc(90% - 200px);
+  position: absolute;
+  right: 5%;
+  border-bottom: 2px solid #eeeff3 ; /*shadow #F9FAFB   #EEF0F1*/
 }
 
 .searchbar input {
   width: 100%;
   box-sizing: border-box;
   border: 0;
-  border-radius: 4px;
   font-size: 18pt;
   background-color: #fff;
   padding: 12px 20px 12px 40px;
@@ -96,5 +226,230 @@ hr {
 }
 
 .content {
-  grid-area: main;
+  top: 54px;
+  right: 5%;
+  width: calc(90% - 200px);
+  min-height: calc(100vh - 20px - 53px);
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #fff;
+  cursor: default;
+}
+
+.task {
+  font-family: OpenSans;
+  font-size: 14pt;
+  float: left;
+  width: 350px;
+  margin: 10px 2% 10px 2%;
+  min-height: 460px;
+
+}
+
+.page-description {
+  padding: 20px;
+  font-size: 12pt;
+  font-family: OpenSans;
+}
+
+.page-description img {
+  width: 15px;
+}
+
+.enable-js {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(118, 21, 32, 0.96);
+	color: #fff;
+	z-index: 8001;
+	text-align: center;
+	font-size: 40px;
+}
+
+.panel {
+	margin-bottom: 30px;
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	display: block;
+	box-sizing: border-box;
+}
+
+.panel-heading {
+	padding: 10px 15px;
+	border-bottom: 1px solid transparent;
+	border-top-right-radius: 1px;
+	border-top-left-radius: 1px;
+}
+
+.panel-body {
+	padding: 15px;
+  overflow: hidden;
+}
+
+.panel-primary {
+	border-color: #2572b4;
+}
+
+.panel-primary > .panel-heading {
+	color: white;
+  background-color: #2572b4;
+  border-color: #2572b4;
+}
+
+.panel-task {
+  border-color: #15A4FA;
+}
+
+.panel-task > .panel-heading {
+  color: white;
+  background-color: #15A4FA
+}
+
+.algae > .panel-heading {
+  background-color: #47BAC1;
+}
+
+.purple > .panel-heading {
+  background-color:  #AE69AF;
+}
+
+.panel-info {
+	border-color: #bce8f1;
+}
+
+.panel-info > .panel-heading {
+	color: #31708f;
+	background: #d9edf7;
+	border-color: #bce8f1;
+}
+
+.panel-default {
+  border-color: #6F7D95;
+  width: 80%;
+}
+
+.panel-default > .panel-heading {
+  background: #6F7D95;
+  color: #fff;
+  height: 50px;
+}
+
+.input-transparent {
+  display: inline-block;
+  height: 30px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+  width: 50%;
+}
+
+.input-transparent:focus {
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(168, 197, 221, 0.6);
+}
+
+.input-heading {
+  height: 40px;
+  background-color: #6F7D95;
+  font-size: 16pt;
+  padding: 5px 10px;
+  box-sizing: content-box;
+  color: #fff;
+}
+
+.label-transparent {
+  color: #7989a0;
+  margin-top: 20px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  width: 130px;
+  display: inline-block;
+  font-family: OpenSans;
+  font-weight: 800;
+}
+
+.grey-border {
+  border: 1px;
+  border-style: solid;
+  border-color: rgba(204, 204, 204, 0.35);
+}
+
+select {
+  background: transparent;
+  width: 180px;
+  padding: 5px 35px 5px 5px;
+  height: 35px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../img/dropdown.png) 96%/11% no-repeat;
+}
+
+textarea {
+  max-width: 100%;
+  max-height: 400px;
+  min-width: 50%;
+  min-height: 35px;
+}
+
+.button-grey {
+  float: right;
+  margin-top: 15px;
+  padding: 5px 10px 5px 10px;
+  border: 0;
+  background-color: #7C8BA6;
+  color: #fff;
+  box-shadow: 0 0 5px #777;
+  cursor: pointer;
+}
+
+.button-grey:after {
+  clear: both;
+}
+
+.button-danger {
+  float: right;
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 5px 10px 5px 10px;
+  border: 0;
+  background-color: #cc4545;
+  color: #fff;
+  box-shadow: 0 0 5px #777;
+  cursor: pointer;
+}
+
+.form-divider {
+  border: 1px solid #eef2f5;
+  border-left: 0;
+  border-right: 0;
+  height: 1px;
+  background-color: #eef2f5;
+}
+
+.edit-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/glyphicons-pencil.png);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  float: right;
+  cursor: pointer;
+}
+
+.auto-size {
+  width: auto;
+  height: auto;
+}
+
+.overview-block {
+  padding: 20px;
+  font-family: OpenSans;
+  width: 300px;
+  margin: auto;
 }

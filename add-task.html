@@ -10,7 +10,8 @@
   <link rel="shortcut icon" type="image/png" href="favicon2.png"/>
   <!-- Separate css for dashboard -->
   <link rel="stylesheet" href="assets/css/master.css" media="screen" />
-  <title>Pregled</title>
+
+  <title>Dodajanje opravila</title>
 </head>
 <body>
   <div class="wrapper">
@@ -33,7 +34,7 @@
           Glavno
         </p>
         <ul>
-          <li class="current-page">
+          <li>
             <a href="overview.html" >Pozdravljen</a>
           </li>
         </ul>
@@ -45,7 +46,7 @@
           Opravila
         </p>
         <ul>
-          <li>
+          <li class="current-page">
             <a href="add-task.html">Dodaj opravilo</a>
           </li>
           <li>
@@ -68,6 +69,9 @@
           </li>
           <li>
             <a href="view-animal.html">Pregled živali</a>
+          </li>
+          <li>
+            <a href="update-animal.html">Posodobi žival</a>
           </li>
         </ul>
       </div>
@@ -92,18 +96,43 @@
       <input type="text" name="search" placeholder="Iskanje..">
     </div>
     <div class="content">
-      <div class="preview-block">
-        <h1>Dobrodošli nazaj</h1>
-        <div class="overview-block">
-          <canvas id="graph-total" width="200" height="100"></canvas>
-          <div>
-            Trenutno število posesti, opravil in živali
+      <header class="header-main">
+        Obrazec za dodajanje novega opravila
+      </header>
+      <div class="page-description">
+        <img src="assets/img/glyphicons-question-sign.png" alt="Question icon">
+        Tukaj lahko vneste vaše novo opravilo. Podrobnosti lahko
+        spreminjate še kasneje pod zavihkom "Posodobi opravila".
+      </div>
+      <div class="form-bg">
+        <form id="add-task-form">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <input type="text" class="input-transparent input-heading" name="task-name" placeholder="Ime opravila" required>
+
+            </div>
+            <div class="panel-body">
+              <label class="label-transparent" for="task-description">Opis</label>
+              <textarea class="input-transparent grey-border" form="add-task-form" name="task-description" required></textarea>
+              <hr class="form-divider" />
+              <label class="label-transparent" for="date">Datum</label>
+              <input class="input-transparent grey-border" type="date" name="date" value="" required>
+              <hr class="form-divider" />
+              <label class="label-transparent" for="type-dropdown">Tip opravila</label>
+              <select id="type-select" class="grey-border" name="type-dropdown">
+                <option value="" selected disabled="disabled">Izberite tip</option>
+                <option value="property">Opravilo na posesti</option>
+                <option value="animals">Opravilo na živalih</option>
+                <option value="other">Drugo</option>
+              </select>
+              <hr class="form-divider" />
+              <div id="additional-data">
+                <!-- filled with javascript on type select -->
+              </div>
+              <input class="button-grey" type="submit" name="submit" value="Dodaj" />
+            </div>
           </div>
-        </div>
-        <div class="overview-block weather">
-          Zelo rad bi še izrisal kakšne prečudovite grafe, morda celo vreme
-          glede na vašo lokacijo, ampak je brez knjižnic za mene preveč potratno.
-        </div>
+        </form>
       </div>
     </div>
   </div>
@@ -115,7 +144,7 @@
       </p>
     </div>
   </noscript>
-  <!-- The overview page script -->
-  <script type="text/javascript" src="assets/js/overview.js"></script>
+  <!-- Add-pages script -->
+  <script type="text/javascript" src="assets/js/add.js"></script>
 </body>
 </html>

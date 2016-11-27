@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Stran ki je namenjena malim in velikim kmetovalcem za lajšanje vsakodnevnih opravil.">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="favicon2.png"/>
+  <!-- Separate css for dashboard -->
+  <link rel="stylesheet" href="assets/css/master.css" media="screen" />
+  <title>Pregled posesti</title>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Navigational area on the left -->
+    <nav>
+      <!-- Account image and name -->
+      <div class="nav-block account-info">
+        <img src="assets/img/default-person-white.png" alt="Default account image" />
+        <div class="dropdown-account">
+          <span id="username">Blaž Vrhovšek</span>
+          <ul class="username-options">
+            <li><a href="index.html">Odjava</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <!-- Main nav section -->
+      <div class="nav-block nav-main">
+        <p class="menu-subtitle">
+          Glavno
+        </p>
+        <ul>
+          <li>
+            <a href="overview.html" >Pozdravljen</a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <!-- Nav section for tasks -->
+      <div class="nav-block nav-tasks">
+        <p class="menu-subtitle">
+          Opravila
+        </p>
+        <ul>
+          <li>
+            <a href="add-task.html">Dodaj opravilo</a>
+          </li>
+          <li>
+            <a href="view-task.html">Pregled opravil</a>
+          </li>
+          <li>
+            <a href="update-task.html">Posodobi opravilo</a>
+          </li>
+        </ul>
+      </div>
+      <hr  />
+      <!-- Nav section for animals -->
+      <div class="nav-block nav-animals">
+        <p class="menu-subtitle">
+          Živali
+        </p>
+        <ul>
+          <li>
+            <a href="add-animal.html">Dodaj žival</a>
+          </li>
+          <li>
+            <a href="view-animal.html">Pregled živali</a>
+          </li>
+          <li>
+            <a href="update-animal.html">Posodobi žival</a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <!-- Nav section for properties -->
+      <div class="nav-block nav-property">
+        <p class="menu-subtitle">
+          Posest
+        </p>
+        <ul>
+          <li>
+            <a href="add-property.html">Dodaj posest</a>
+          </li>
+          <li class="current-page">
+            <a href="view-property.html">Pregled posesti</a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+    </nav>
+    <div class="searchbar">
+      <input type="text" name="search" placeholder="Iskanje..">
+    </div>
+    <div class="content">
+        <header class="header-main">
+          Pregled posesti
+        </header>
+        <div class="page-description">
+          <img src="assets/img/glyphicons-question-sign.png" alt="Question icon">
+          <p>
+            Naštete so vse posesti, podatki o njih so pridobljeni preko Javnega pregledovalnika kmetijskih zemljišč.
+          </p>
+        </div>
+        <div class="panel panel-task task purple">
+          <header class="panel-heading upper">
+            Okoli in okoli
+          </header>
+          <div class="panel-body">
+            <label class="label-transparent" for="gerk">GERK PID</label>
+            <input class="input-transparent" type="text" name="gerk" disabled value="1922178" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="usage">Raba</label>
+            <input class="input-transparent" type="text" name="usage" disabled value="Trajni travnik" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="size">Površina</label>
+            <input class="input-transparent" type="text" name="usage" disabled value="1,08ha" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="height">Povprečna nmv</label>
+            <input class="input-transparent" type="text" name="height" disabled value="280.7m" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="tilt">Naklon</label>
+            <input class="input-transparent" type="text" name="tilt" disabled value="2% / 1.3" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="tilt">Povezava</label>
+            <span class="input-transparent" name="tilt">
+              <a href="http://rkg.gov.si/GERK/WebViewer/#map_x=538496&map_y=131360&map_sc=7142&feature=GERK_SDO:1922178" target="_blank">klik</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="panel panel-task task">
+          <header class="panel-heading upper">
+            Okoli in okoli
+          </header>
+          <div class="panel-body">
+            <label class="label-transparent" for="gerk">GERK PID</label>
+            <input class="input-transparent" type="text" name="gerk" disabled value="1922178" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="usage">Raba</label>
+            <input class="input-transparent" type="text" name="usage" disabled value="Trajni travnik" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="size">Površina</label>
+            <input class="input-transparent" type="text" name="usage" disabled value="1,08ha" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="height">Povprečna nmv</label>
+            <input class="input-transparent" type="text" name="height" disabled value="280.7m" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="tilt">Naklon</label>
+            <input class="input-transparent" type="text" name="tilt" disabled value="2% / 1.3" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="tilt">Povezava</label>
+            <span class="input-transparent" name="tilt">
+              <a href="http://rkg.gov.si/GERK/WebViewer/#map_x=538496&map_y=131360&map_sc=7142&feature=GERK_SDO:1922178" target="_blank">klik</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="panel panel-task task algae">
+          <header class="panel-heading upper">
+            Okoli in okoli
+          </header>
+          <div class="panel-body">
+            <label class="label-transparent" for="gerk">GERK PID</label>
+            <input class="input-transparent" type="text" name="gerk" disabled value="1922178" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="usage">Raba</label>
+            <input class="input-transparent" type="text" name="usage" disabled value="Trajni travnik" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="size">Površina</label>
+            <input class="input-transparent" type="text" name="usage" disabled value="1,08ha" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="height">Povprečna nmv</label>
+            <input class="input-transparent" type="text" name="height" disabled value="280.7m" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="tilt">Naklon</label>
+            <input class="input-transparent" type="text" name="tilt" disabled value="2% / 1.3" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="tilt">Povezava</label>
+            <span class="input-transparent" name="tilt">
+              <a href="http://rkg.gov.si/GERK/WebViewer/#map_x=538496&map_y=131360&map_sc=7142&feature=GERK_SDO:1922178" target="_blank">klik</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="panel panel-task task">
+          <header class="panel-heading upper">
+            Okoli in okoli
+          </header>
+          <div class="panel-body">
+            <label class="label-transparent" for="gerk">GERK PID</label>
+            <input class="input-transparent" type="text" name="gerk" disabled value="1922178" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="usage">Raba</label>
+            <input class="input-transparent" type="text" name="usage" disabled value="Trajni travnik" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="size">Površina</label>
+            <input class="input-transparent" type="text" name="usage" disabled value="1,08ha" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="height">Povprečna nmv</label>
+            <input class="input-transparent" type="text" name="height" disabled value="280.7m" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="tilt">Naklon</label>
+            <input class="input-transparent" type="text" name="tilt" disabled value="2% / 1.3" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="tilt">Povezava</label>
+            <span class="input-transparent" name="tilt">
+              <a href="http://rkg.gov.si/GERK/WebViewer/#map_x=538496&map_y=131360&map_sc=7142&feature=GERK_SDO:1922178" target="_blank">klik</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="panel panel-task task algae">
+          <header class="panel-heading upper">
+            Okoli in okoli
+          </header>
+          <div class="panel-body">
+            <label class="label-transparent" for="gerk">GERK PID</label>
+            <input class="input-transparent" type="text" name="gerk" disabled value="1922178" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="usage">Raba</label>
+            <input class="input-transparent" type="text" name="usage" disabled value="Trajni travnik" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="size">Površina</label>
+            <input class="input-transparent" type="text" name="usage" disabled value="1,08ha" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="height">Povprečna nmv</label>
+            <input class="input-transparent" type="text" name="height" disabled value="280.7m" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="tilt">Naklon</label>
+            <input class="input-transparent" type="text" name="tilt" disabled value="2% / 1.3" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="tilt">Povezava</label>
+            <span class="input-transparent" name="tilt">
+              <a href="http://rkg.gov.si/GERK/WebViewer/#map_x=538496&map_y=131360&map_sc=7142&feature=GERK_SDO:1922178" target="_blank">klik</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="panel panel-task task purple">
+          <header class="panel-heading upper">
+            Okoli in okoli
+          </header>
+          <div class="panel-body">
+            <label class="label-transparent" for="gerk">GERK PID</label>
+            <input class="input-transparent" type="text" name="gerk" disabled value="1922178" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="usage">Raba</label>
+            <input class="input-transparent" type="text" name="usage" disabled value="Trajni travnik" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="size">Površina</label>
+            <input class="input-transparent" type="text" name="usage" disabled value="1,08ha" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="height">Povprečna nmv</label>
+            <input class="input-transparent" type="text" name="height" disabled value="280.7m" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="tilt">Naklon</label>
+            <input class="input-transparent" type="text" name="tilt" disabled value="2% / 1.3" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="tilt">Povezava</label>
+            <span class="input-transparent" name="tilt">
+              <a href="http://rkg.gov.si/GERK/WebViewer/#map_x=538496&map_y=131360&map_sc=7142&feature=GERK_SDO:1922178" target="_blank">klik</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="panel panel-task task purple">
+          <header class="panel-heading upper">
+            Okoli in okoli
+          </header>
+          <div class="panel-body">
+            <label class="label-transparent" for="gerk">GERK PID</label>
+            <input class="input-transparent" type="text" name="gerk" disabled value="1922178" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="usage">Raba</label>
+            <input class="input-transparent" type="text" name="usage" disabled value="Trajni travnik" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="size">Površina</label>
+            <input class="input-transparent" type="text" name="usage" disabled value="1,08ha" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="height">Povprečna nmv</label>
+            <input class="input-transparent" type="text" name="height" disabled value="280.7m" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="tilt">Naklon</label>
+            <input class="input-transparent" type="text" name="tilt" disabled value="2% / 1.3" />
+            <hr class="form-divider"  />
+            <label class="label-transparent" for="tilt">Povezava</label>
+            <span class="input-transparent" name="tilt">
+              <a href="http://rkg.gov.si/GERK/WebViewer/#map_x=538496&map_y=131360&map_sc=7142&feature=GERK_SDO:1922178" target="_blank">klik</a>
+            </span>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- Alerts the user to use javascript on this page -->
+  <noscript>
+    <div class="enable-js">
+      <p>
+        Please enable javascript to view this page.
+      </p>
+    </div>
+  </noscript>
+</body>
+</html>

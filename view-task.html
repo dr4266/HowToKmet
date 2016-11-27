@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Stran ki je namenjena malim in velikim kmetovalcem za lajšanje vsakodnevnih opravil.">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="favicon2.png"/>
+  <!-- Separate css for dashboard -->
+  <link rel="stylesheet" href="assets/css/master.css" media="screen" />
+  <title>Pregled opravil</title>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Navigational area on the left -->
+    <nav>
+      <!-- Account image and name -->
+      <div class="nav-block account-info">
+        <img src="assets/img/default-person-white.png" alt="Default account image" />
+        <div class="dropdown-account">
+          <span id="username">Blaž Vrhovšek</span>
+          <ul class="username-options">
+            <li><a href="index.html">Odjava</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <!-- Main nav section -->
+      <div class="nav-block nav-main">
+        <p class="menu-subtitle">
+          Glavno
+        </p>
+        <ul>
+          <li>
+            <a href="overview.html" >Pozdravljen</a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <!-- Nav section for tasks -->
+      <div class="nav-block nav-tasks">
+        <p class="menu-subtitle">
+          Opravila
+        </p>
+        <ul>
+          <li>
+            <a href="add-task.html">Dodaj opravilo</a>
+          </li>
+          <li class="current-page">
+            <a href="view-task.html">Pregled opravil</a>
+          </li>
+          <li>
+            <a href="update-task.html">Posodobi opravilo</a>
+          </li>
+        </ul>
+      </div>
+      <hr  />
+      <!-- Nav section for animals -->
+      <div class="nav-block nav-animals">
+        <p class="menu-subtitle">
+          Živali
+        </p>
+        <ul>
+          <li>
+            <a href="add-animal.html">Dodaj žival</a>
+          </li>
+          <li>
+            <a href="view-animal.html">Pregled živali</a>
+          </li>
+          <li>
+            <a href="update-animal.html">Posodobi žival</a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <!-- Nav section for properties -->
+      <div class="nav-block nav-property">
+        <p class="menu-subtitle">
+          Posest
+        </p>
+        <ul>
+          <li>
+            <a href="add-property.html">Dodaj posest</a>
+          </li>
+          <li>
+            <a href="view-property.html">Pregled posesti</a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+    </nav>
+    <div class="searchbar">
+      <input type="text" name="search" placeholder="Iskanje..">
+    </div>
+    <div class="content">
+      <header class="header-main">
+        Pregled vseh opravil
+      </header>
+      <div class="page-description">
+        <img src="assets/img/glyphicons-question-sign.png" alt="Question icon">
+        <p>
+          Našteta so vsa vaša opravila, ki so tudi barvna glede na tip.
+        </p>
+      </div>
+      <div class="panel panel-task task property">
+        <header class="panel-heading upper">
+          Setev koruze
+          <div class="edit-icon"></div>
+        </header>
+        <div class="panel-body">
+          <label class="label-transparent" for="date">Datum opravila</label>
+          <input class="input-transparent" type="text" name="date" disabled value="4. april 2015" />
+          <hr class="form-divider"  />
+          <label class="label-transparent" for="type">Tip opravila</label>
+          <input class="input-transparent" type="text" name="type" disabled value="Delo na posesti" />
+          <hr class="form-divider"  />
+          <label class="label-transparent" for="property">Posest</label>
+          <input class="input-transparent" type="text" name="property" disabled value="Črešnarjevo"  />
+          <hr class="form-divider"  />
+          <label class="label-transparent" for="desc">Opis</label>
+          <textarea class="input-transparent auto-size" name="desc" disabled>seme Pionerr P9903 AQ</textarea>
+          <hr class="form-divider"  />
+        </div>
+      </div>
+
+      <div class="panel panel-task task animal">
+        <header class="panel-heading upper">
+          Osemenitev krave
+          <div class="edit-icon"></div>
+        </header>
+        <div class="panel-body">
+          <label class="label-transparent" for="date">Datum opravila</label>
+          <input class="input-transparent" type="text" name="date" disabled value="6. junij 2015" />
+          <hr class="form-divider"  />
+          <label class="label-transparent" for="type">Tip opravila</label>
+          <input class="input-transparent" type="text" name="type" disabled value="Opravilo živali" />
+          <hr class="form-divider"  />
+          <label class="label-transparent" for="animal">Žival</label>
+          <input class="input-transparent" type="text" name="animal" disabled value="Sernelovka"  />
+          <hr class="form-divider"  />
+          <label class="label-transparent" for="desc">Opis</label>
+          <textarea class="input-transparent auto-size" name="desc" disabled>Osemenitev z bikom Hortis</textarea>
+          <hr class="form-divider"  />
+        </div>
+      </div>
+
+      <div class="panel panel-task task animal">
+        <header class="panel-heading upper">
+          Zakol prašiča
+          <div class="edit-icon"></div>
+        </header>
+        <div class="panel-body">
+          <label class="label-transparent" for="date">Datum opravila</label>
+          <input class="input-transparent" type="text" name="date" disabled value="20. november 2016" />
+          <hr class="form-divider"  />
+          <label class="label-transparent" for="type">Tip opravila</label>
+          <input class="input-transparent" type="text" name="type" disabled value="Opravilo na živalih" />
+          <hr class="form-divider"  />
+          <label class="label-transparent" for="animal">Žival</label>
+          <input class="input-transparent" type="text" name="animal" disabled value="Nelika"  />
+          <hr class="form-divider"  />
+          <label class="label-transparent" for="desc">Opis</label>
+          <textarea class="input-transparent auto-size" name="desc" disabled>mesar Grega</textarea>
+          <hr class="form-divider"  />
+        </div>
+      </div>
+
+      <div class="panel panel-task task purple">
+        <header class="panel-heading upper">
+          Nakup stroja
+          <div class="edit-icon"></div>
+        </header>
+        <div class="panel-body">
+          <label class="label-transparent" for="date">Datum opravila</label>
+          <input class="input-transparent" type="text" name="date" disabled value="16. marec 2016" />
+          <hr class="form-divider"  />
+          <label class="label-transparent" for="type">Tip opravila</label>
+          <input class="input-transparent" type="text" name="type" disabled value="Drugo" />
+          <hr class="form-divider"  />
+          <label class="label-transparent" for="desc">Opis</label>
+          <textarea class="input-transparent auto-size" name="desc" disabled>Krone Swadro 38 + kopirno kolo</textarea>
+          <hr class="form-divider"  />
+        </div>
+      </div>
+
+      <div class="panel panel-task task purple">
+        <header class="panel-heading upper">
+          Nakup umetnega gnoja
+          <div class="edit-icon"></div>
+        </header>
+        <div class="panel-body">
+          <label class="label-transparent" for="date">Datum opravila</label>
+          <input class="input-transparent" type="text" name="date" disabled value="2. april 2015" />
+          <hr class="form-divider"  />
+          <label class="label-transparent" for="type">Tip opravila</label>
+          <input class="input-transparent" type="text" name="type" disabled value="Drugo" />
+          <hr class="form-divider"  />
+          <label class="label-transparent" for="desc">Opis</label>
+          <textarea class="input-transparent auto-size" name="desc" disabled>KAN Lukavac 725kg, NPK 950kg</textarea>
+          <hr class="form-divider"  />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Alerts the user to use javascript on this page -->
+  <noscript>
+    <div class="enable-js">
+      <p>
+        Please enable javascript to view this page.
+      </p>
+    </div>
+  </noscript>
+</body>
+</html>
