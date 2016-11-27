@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="description" content="Stran ki je namenjena malim in velikim kmetovalcem za lajšanje vsakodnevnih opravil.">
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/png" href="favicon2.png"/>
@@ -96,31 +95,30 @@
     </div>
     <div class="content">
 
-        <header class="header-main">
-          Obrazec za dodajanje nove posesti
-        </header>
-        <span class="page-description">
-          <img src="assets/img/glyphicons-question-sign.png" alt="Question icon">
-          <p>
-            Tukaj lahko vnesete vse vaše posesti. Za vnos potrebujete le GERK PID, podatki
-            se nato dobijo iz strani
-            <a href="http://rkg.gov.si/GERK/WebViewer/">Pregledovalnik grafičnih podatkov MKGP</a>
-          </p>
-        </span>
-        <div class="form-bg">
-          <form id="add-property-form">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <input type="text" class="input-transparent input-heading" name="property-name" placeholder="Domače ime posesti" required>
-              </div>
-              <div class="panel-body">
-                <label class="label-transparent" for="gerk">GERK posesti</label>
-                <input class="input-transparent grey-border" type="text" name="gerk" value="" required>
-                <input class="button-grey" type="submit" name="submit" value="Dodaj" />
-              </div>
+      <header class="header-main">
+        Obrazec za dodajanje nove posesti
+      </header>
+      <div class="page-description">
+        <img src="assets/img/glyphicons-question-sign.png" alt="Question icon">
+        <p>
+          Tukaj lahko vnesete vse vaše posesti. Za vnos potrebujete le GERK PID, podatki
+          se nato dobijo iz strani
+          <a href="http://rkg.gov.si/GERK/WebViewer/">Pregledovalnik grafičnih podatkov MKGP</a>
+        </p>
+      </div>
+      <div class="form-bg">
+        <form id="add-property-form">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <input type="text" class="input-transparent input-heading" name="property-name" placeholder="Domače ime posesti" required>
             </div>
-          </form>
-        </div>
+            <div class="panel-body">
+              <label class="label-transparent" for="gerk">GERK posesti</label>
+              <input id="gerk" class="input-transparent grey-border" type="text" name="gerk" value="" required>
+              <input class="button-grey" type="submit" name="submit" value="Dodaj" />
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>

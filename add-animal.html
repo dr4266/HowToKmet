@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="description" content="Stran ki je namenjena malim in velikim kmetovalcem za lajšanje vsakodnevnih opravil.">
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/png" href="favicon2.png"/>
@@ -98,12 +97,12 @@
       <header class="header-main">
         Obrazec za dodajanje nove živali
       </header>
-      <span class="page-description">
+      <div class="page-description">
         <img src="assets/img/glyphicons-question-sign.png" alt="Question icon">
         <p>
           Tukaj lahko vnesete vse vaše živali.
         </p>
-      </span>
+      </div>
       <div class="form-bg">
         <form id="add-animal-form">
           <div class="panel panel-default">
@@ -112,12 +111,12 @@
             </div>
             <div class="panel-body">
               <label class="label-transparent" for="animal-id">ID</label>
-              <input class="input-transparent grey-border" type="text" name="animal-id" value="" required>
+              <input id="animal-id" class="input-transparent grey-border" type="text" name="animal-id" value="" required>
               <hr class="form-divider" />
               <label class="label-transparent" for="date">Datum rojstva</label>
-              <input class="input-transparent grey-border" type="date" name="date" value="" required>
+              <input id="date" class="input-transparent grey-border" type="date" name="date" value="" required>
               <hr class="form-divider" />
-              <label class="label-transparent" for="type-dropdown">Vrsta živali</label>
+              <label class="label-transparent" for="type-select">Vrsta živali</label>
               <select id="type-select" class="grey-border" name="type-dropdown">
                 <option value="" selected disabled="disabled">Izberite vrsto</option>
                 <option value="cow">Krava</option>
@@ -126,7 +125,7 @@
               </select>
               <hr class="form-divider" />
               <label class="label-transparent" for="animal-description">Dodaten opis</label>
-              <textarea class="input-transparent grey-border" form="add-animal-form" name="animal-description" required></textarea>
+              <textarea id="animal-description" class="input-transparent grey-border" form="add-animal-form" name="animal-description" required></textarea>
               <input class="button-grey" type="submit" name="submit" value="Dodaj" />
             </div>
           </div>

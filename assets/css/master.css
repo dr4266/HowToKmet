@@ -298,7 +298,7 @@ hr {
 .panel-primary > .panel-heading {
 	color: white;
   background-color: #2572b4;
-  border-color: #2572b4;
+  border-color: #2269a6;
 }
 
 .panel-task {
@@ -383,9 +383,6 @@ select {
   width: 180px;
   padding: 5px 35px 5px 5px;
   height: 35px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   background: url(../img/dropdown.png) 96%/11% no-repeat;
 }
 
@@ -424,7 +421,7 @@ textarea {
 }
 
 .form-divider {
-  border: 1px solid #eef2f5;
+  border: 1px solid #dfe3e7;
   border-left: 0;
   border-right: 0;
   height: 1px;

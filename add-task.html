@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="description" content="Stran ki je namenjena malim in velikim kmetovalcem za lajšanje vsakodnevnih opravil.">
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/png" href="favicon2.png"/>
@@ -113,12 +112,12 @@
             </div>
             <div class="panel-body">
               <label class="label-transparent" for="task-description">Opis</label>
-              <textarea class="input-transparent grey-border" form="add-task-form" name="task-description" required></textarea>
+              <textarea id="task-description" class="input-transparent grey-border" form="add-task-form" name="task-description" required></textarea>
               <hr class="form-divider" />
               <label class="label-transparent" for="date">Datum</label>
-              <input class="input-transparent grey-border" type="date" name="date" value="" required>
+              <input id="date" class="input-transparent grey-border" type="date" name="date" value="" required>
               <hr class="form-divider" />
-              <label class="label-transparent" for="type-dropdown">Tip opravila</label>
+              <label class="label-transparent" for="type-select">Tip opravila</label>
               <select id="type-select" class="grey-border" name="type-dropdown">
                 <option value="" selected disabled="disabled">Izberite tip</option>
                 <option value="property">Opravilo na posesti</option>
